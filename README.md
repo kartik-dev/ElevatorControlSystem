@@ -1,12 +1,12 @@
-# elevator-control-system
+# Elevator Control System
 
 ## Design
 The elevator control system has two classes `ElevatorControlSystem` and `Elevator`
 
 ### ElevatorControlSystem
 
-The ElevatorControlSystem implements ECSFactory interface. It manages all of the Elevators and their states. It is also responsible for receiving pickup request (Pickup Floor and Direction) from Passengers outside the Elevator and direction from Passenger inside the Elevator. 
-Elevator Control is also responsible for maintaining the state of every elevators (what floor they are and where they are going)
+The ElevatorControlSystem implements ECSFactory interface. It manages all of the Elevators and their states. It is also responsible for receiving pickup request (Pickup Floor and Direction) from passengers outside the elevator. 
+Elevator Control is also responsible for time-stepping every elevators.
 
 __ECSFactory__ - Interface to define the ElevatorControlSystem attributes and behaviours
 ```java
@@ -17,7 +17,7 @@ public interface ECSFactory {
 }
 ```
 ### Elevator
-The Elevator class is responsible for elevator's behaviours (i.e moveUp, moveDown)
+The Elevator class is responsible for elevator's behaviours (i.e moveUp, moveDown) and maintain the state (current floor and destination floors list)
 
 __ElevatorFactory__ - Interface to define the ElevatorControlSystem attributes and behaviours
 ```java
