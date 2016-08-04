@@ -20,7 +20,7 @@ public class Elevator implements ElevatorFactory {
 	/**
 	 * Find what is the next destination for the elevator
 	 * 
-	 * @return
+	 * @return next destination floor
 	 */
 	public int nextDestionation() {
 		return this.destFloors.peek();
