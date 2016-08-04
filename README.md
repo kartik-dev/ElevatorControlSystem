@@ -1,7 +1,7 @@
 # Elevator Control System
 
-## Design
-The elevator control system has two classes `ElevatorControlSystem` and `Elevator`
+## System Design
+The Elevator Control System has two classes `ElevatorControlSystem` and `Elevator`
 
 ### ElevatorControlSystem
 
@@ -29,7 +29,11 @@ public interface ElevatorFactory {
 	ElevatorStatus status();
 }
 ```
-### Things to improve
+## Build instructions
+
+Elevator Control System is implemented in Java using Eclipse IDE, therefore please checkout this project in eclipse and run the JUnit testcases for Elevator and ElevatorControlSystem classes
+
+## Things to improve
 - [ ] Implement Pickup direction with direction
 - [ ] Implement exception handling
 - [ ] Better way of sorting pickup and destination location lists
